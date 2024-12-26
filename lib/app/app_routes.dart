@@ -12,7 +12,7 @@ var pages = [
   GetPage(
     name: AppRoute.signIn,
     transition: Transition.rightToLeft,
-    page: () => const SigninScreen(),
+    page: () => SignInScreen(),
   ),
   GetPage(
     name: AppRoute.home,
