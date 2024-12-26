@@ -17,6 +17,6 @@ var pages = [
   GetPage(
     name: AppRoute.home,
     transition: Transition.rightToLeft,
-    page: () => const HomeScreen(),
+    page: () => HomeScreen(),
   ),
 ];

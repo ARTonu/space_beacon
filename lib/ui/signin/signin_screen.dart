@@ -6,6 +6,7 @@ import 'package:space_beacon/ui/signin/signin_screen_controller.dart';
 import 'package:space_beacon/utils/snackbar_utils.dart';
 
 import '../../gen/assets.gen.dart';
+import '../../utils/text_style_utils.dart';
 
 class SignInScreen extends StatelessWidget {
   final SignInScreenController controller = Get.put(SignInScreenController());
@@ -63,11 +64,7 @@ class SignInScreen extends StatelessWidget {
     if (controller.isSingingIn.value) {
       return const Text(
         "Please wait...",
-        style: TextStyle(
-          fontSize: 18,
-          fontWeight: FontWeight.bold,
-          color: Colors.blueAccent,
-        ),
+        style: infoStyle,
       );
     } else {
       if (controller.isSingInSuccess.value) {
@@ -75,11 +72,7 @@ class SignInScreen extends StatelessWidget {
       } else {
         return Text(
           controller.result.value,
-          style: const TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.bold,
-            color: Colors.redAccent,
-          ),
+          style: errorStyle,
         );
       }
     }
