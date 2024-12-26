@@ -13,6 +13,9 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    WidgetsBinding.instance.addPostFrameCallback((time) async {
+      await controller.determinePosition();
+    });
     return Scaffold(
       appBar: AppBar(
         title: const Text(
