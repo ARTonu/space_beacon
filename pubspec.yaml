@@ -36,12 +36,20 @@ dependencies:
   firebase_auth: ^5.3.4
   lottie: ^3.2.0
   logger: ^2.5.0
+  dio: ^5.7.0
+  retrofit: ^4.4.0
+  freezed_annotation: ^2.4.4
+  json_annotation: ^4.9.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  build_runner:
+  build_runner: ^2.3.3
+  source_gen: ^1.1.0
   flutter_gen_runner:
+  retrofit_generator: '>=8.0.0 <10.0.0' # for Dart 3.3 use ^9.0.0
+  freezed: ^2.5.7
+  json_serializable: ^6.8.0
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

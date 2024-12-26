@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "383860828580",
+    "project_id": "play-ground-bb0ab",
+    "storage_bucket": "play-ground-bb0ab.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:383860828580:android:091867eaaf13122af97931",
+        "android_client_info": {
+          "package_name": "com.artonu.space_beacon"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7VO344pi4vyDONjTrtfzyyW402SM1sxM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
