@@ -113,7 +113,7 @@ class HomeScreen extends StatelessWidget {
             style: infoMsgStyle,
           ),
           TextSpan(
-            text: "Country/Region:  \n",
+            text: "Country/Region:  ${controller.countryIss.value}\n",
             style: infoMsgStyle,
           ),
         ],
