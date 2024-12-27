@@ -66,8 +66,9 @@ class HomeScreenController extends GetxController {
         var lat = double.parse(apiTask.response!.issPosition.latitude);
         var lng = double.parse(apiTask.response!.issPosition.longitude);
         var countryName = await getCountryName(lat, lng);
-        countryIss.value =
-            countryName.isNotEmpty ? countryName : "could not get";
+        countryIss.value = countryName.isNotEmpty ? countryName : "Unknown";
+        // Update the isAboveMyCountry to show the special msg
+        // When both userCountry and countryIss is not empty and equal
         isAboveMyCountry.value = countryIss.value != null &&
             userCountryName != null &&
             countryIss.value!.isNotEmpty &&

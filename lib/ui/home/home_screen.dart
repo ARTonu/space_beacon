@@ -95,21 +95,22 @@ class HomeScreen extends StatelessWidget {
   Widget buildPositionInfoWidget() {
     return RichText(
       textAlign: TextAlign.center,
+      overflow: TextOverflow.ellipsis,
       text: TextSpan(
         text: "Last Update\n\n",
         style: infoHeaderStyle,
         children: <TextSpan>[
+          TextSpan(
+            text:
+                "Latitude: ${controller.issNow.value?.issPosition.latitude} Longitude: ${controller.issNow.value?.issPosition.longitude}\n",
+            style: infoMsgStyle,
+          ),
           TextSpan(
             text: "Time: ${controller.getLastUpdateTimeUtc()}\n",
             style: infoMsgStyle,
           ),
           TextSpan(
             text: "Time: ${controller.getLastUpdateTimeLocal()}\n",
-            style: infoMsgStyle,
-          ),
-          TextSpan(
-            text:
-                "Latitude: ${controller.issNow.value?.issPosition.latitude} Longitude: ${controller.issNow.value?.issPosition.longitude}\n",
             style: infoMsgStyle,
           ),
           TextSpan(
