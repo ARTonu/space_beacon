@@ -7,7 +7,7 @@ import '../../gen/assets.gen.dart';
 import '../../utils/text_style_utils.dart';
 
 class HomeScreen extends StatelessWidget {
-  final HomeScreenController controller = Get.put(HomeScreenController());
+  final HomeScreenController controller = Get.find();
 
   HomeScreen({super.key});
 

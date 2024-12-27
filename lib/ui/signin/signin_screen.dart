@@ -9,7 +9,7 @@ import '../../gen/assets.gen.dart';
 import '../../utils/text_style_utils.dart';
 
 class SignInScreen extends StatelessWidget {
-  final SignInScreenController controller = Get.put(SignInScreenController());
+  final SignInScreenController controller = Get.find();
 
   SignInScreen({super.key});
 
