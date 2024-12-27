@@ -24,8 +24,11 @@ class SignInScreen extends StatelessWidget {
       Future.delayed(const Duration(seconds: 2), () async {
         await controller.signIntoSpaceBeacon();
         if (controller.isSingInSuccess.value) {
-          showSuccessSnackBar("Success", controller.result.value);
-          Get.offNamed(AppRoute.home);
+          showSuccessSnackBar("Success", controller.result.value)
+              .future
+              .then((_) {
+            Get.offNamed(AppRoute.home);
+          });
         }
       });
     });

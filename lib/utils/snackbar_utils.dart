@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-void showErrorSnackBar(String title, String message) {
-  Get.snackbar(
+SnackbarController showErrorSnackBar(String title, String message) {
+  return Get.snackbar(
     title,
     message,
     duration: const Duration(seconds: 3),
@@ -11,8 +11,8 @@ void showErrorSnackBar(String title, String message) {
   );
 }
 
-void showSuccessSnackBar(String title, String message) {
-  Get.snackbar(
+SnackbarController showSuccessSnackBar(String title, String message) {
+  return Get.snackbar(
     title,
     message,
     duration: const Duration(seconds: 2),
@@ -21,8 +21,8 @@ void showSuccessSnackBar(String title, String message) {
   );
 }
 
-void showInfoSnackBar(String title, String message) {
-  Get.snackbar(
+SnackbarController showInfoSnackBar(String title, String message) {
+  return Get.snackbar(
     title,
     message,
     duration: const Duration(seconds: 3),
