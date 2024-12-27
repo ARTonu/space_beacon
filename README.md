@@ -20,6 +20,10 @@ The app consists of two screens:
     - Auto-refreshes data every minute, showing a countdown timer for the next refresh.
     - Includes a button to manually refresh the data.
 
+## App Demo
+
+![App Preview](https://github.com/ARTonu/space_beacon/raw/refs/heads/main/dist/demo.gif)
+
 ## App Installation
 
 [Download the APK](https://github.com/ARTonu/space_beacon/raw/refs/heads/main/dist/app-release.apk) and install it
